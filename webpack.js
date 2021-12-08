@@ -1,5 +1,6 @@
 const path = require('path');
-const webpack = require('webpack');
+
+const development = process.env.NODE_ENV !== 'production';
 
 module.exports = {
 	entry: {
@@ -12,6 +13,7 @@ module.exports = {
 	resolve: {
 		extensions: ['.tsx', '.ts', '.js'],
 	},
+	mode: development ? 'development' : 'production',
 	module: {
 		rules: [
 			{
