@@ -7,7 +7,7 @@ module.exports = {
 		'phoenix.js': './src/phoenix.ts',
 	},
 	output: {
-		path: path.resolve(__dirname, 'out'),
+		path: path.resolve(__dirname, 'dist'),
 		filename: '[name]',
 	},
 	resolve: {
